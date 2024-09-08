@@ -38,7 +38,7 @@
             required
             v-model="signInField.password"
           />
-          <input class="formControls_btnSubmit" type="button" @click="signIn" value="登入" />
+          <button class="formControls_btnSubmit" @click.prevent="signIn">登入</button>
           <RouterLink to="/SignupPage" class="formControls_btnLink">註冊帳號</RouterLink>
         </form>
       </div>
